@@ -2,20 +2,20 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LoginUI.MainPage"
-             BackgroundColor="#035397"
+             BackgroundColor="DarkRed"
              >
 
-    <StackLayout VerticalOptions="Center">
-        <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="Large" FontAttributes="Bold"></Label>
+    <StackLayout VerticalOptions="Center" Margin="20">
+       
         <Image Source="logo.png"></Image>
-        <Frame BackgroundColor="White"  HeightRequest="100" >
+        <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="20" FontAttributes="Bold"></Label>
+        <Frame BackgroundColor="White"  HeightRequest="100" CornerRadius="20">
             <StackLayout >
-                <Entry x:Name ="nameEntry" Placeholder="Username" PlaceholderColor="Black" ></Entry>
+                <Entry x:Name ="nameEntry" Placeholder="Username" PlaceholderColor="Black"></Entry>
                 <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
             </StackLayout>
-            
         </Frame>
-        <Button Text="Login" TextColor="#035397" BorderColor="White" BackgroundColor="White" HorizontalOptions="Center" Clicked="OnButtonClicked" ></Button>
+        <Button Text="Login" TextColor="DarkRed"  BackgroundColor="White"  Clicked="OnButtonClicked" FontAttributes="Bold" Margin="20 40"></Button>
     </StackLayout>
 
 </ContentPage>
