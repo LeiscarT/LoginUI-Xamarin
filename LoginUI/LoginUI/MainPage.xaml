@@ -7,15 +7,15 @@
 
     <StackLayout VerticalOptions="Center">
         <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="Large" FontAttributes="Bold"></Label>
-       
-        <Frame BackgroundColor="White" WidthRequest="200" HeightRequest="100" >
-            <StackLayout>
-                <Entry Placeholder="Username"  ></Entry>
-                <Entry Placeholder="Password" IsPassword="True" ></Entry>
-                
+        <Image Source="logo.png"></Image>
+        <Frame BackgroundColor="White"  HeightRequest="100" >
+            <StackLayout >
+                <Entry x:Name ="nameEntry" Placeholder="Username" PlaceholderColor="Black" ></Entry>
+                <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True"  PlaceholderColor="Black"></Entry>
             </StackLayout>
+            
         </Frame>
-        <Button Text="Login" TextColor="#035397" BorderColor="Blue" BackgroundColor="White" WidthRequest="50"></Button>
+        <Button Text="Login" TextColor="#035397" BorderColor="White" BackgroundColor="White" HorizontalOptions="Center" Clicked="OnButtonClicked" ></Button>
     </StackLayout>
 
 </ContentPage>

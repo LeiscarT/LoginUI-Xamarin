@@ -14,5 +14,18 @@ namespace LoginUI
         {
             InitializeComponent();
         }
+
+        async void OnButtonClicked(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(nameEntry.Text) || string.IsNullOrEmpty(passwordEntry.Text))
+            {
+                await DisplayAlert("Error", "Debe de llenar los campos", "Ok");
+            }
+
+            else
+            {
+                await DisplayAlert("Bienvenido", $"Hola {nameEntry.Text}", "Ok");
+            }
+        }
     }
 }
