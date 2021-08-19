@@ -1,24 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LoginUI.MainPage">
+             x:Class="LoginUI.MainPage"
+             BackgroundColor="#035397"
+             >
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <StackLayout VerticalOptions="Center">
+        <Label Text="LOGIN" TextColor="White" HorizontalOptions="Center" FontSize ="Large" FontAttributes="Bold"></Label>
+       
+        <Frame BackgroundColor="White" WidthRequest="200" HeightRequest="100" >
+            <StackLayout>
+                <Entry Placeholder="Username"  ></Entry>
+                <Entry Placeholder="Password" IsPassword="True" ></Entry>
+                
+            </StackLayout>
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
+        <Button Text="Login" TextColor="#035397" BorderColor="Blue" BackgroundColor="White" WidthRequest="50"></Button>
     </StackLayout>
 
 </ContentPage>
